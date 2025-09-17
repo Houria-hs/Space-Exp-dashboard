@@ -4,7 +4,6 @@ import axios from "axios";
 export const ApodTest = () => {
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
-  const API_KEY ="xs9jqCh4PkMKo8geVNFUzjhgHLA5bX9rjfwH28g9"
 
   // How many chars to show before "Read more"
   const limit = 150; 
@@ -13,7 +12,7 @@ export const ApodTest = () => {
 
   useEffect(() => {
     axios
-      .get( `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
+      .get("http://localhost:5000/api/apod")
       .then((res) => {
         setData(res.data);
       })

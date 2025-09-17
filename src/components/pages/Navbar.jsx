@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="hidden md:flex  space-x-8 ml-auto">
             <Link className="hover:text-indigo-400" to="/">Home</Link> 
             <Link className="hover:text-indigo-400" to="/News">Space News</Link> 
-            <Link className="hover:text-indigo-400" to="/SpaceWeather">Space Weather</Link>
+            <Link className="hover:text-indigo-400" to="/SpaceWeather">Mars Weather</Link>
             <Link className="hover:text-indigo-400" to="/WeightCalculator">Space Calculator</Link>
           </div>
 

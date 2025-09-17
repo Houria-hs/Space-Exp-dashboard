@@ -33,8 +33,7 @@ const WeightCalculator = () => {
       <div className="w-full max-w-md bg-gray-900 rounded-2xl shadow-2xl p-10 text-white">
         <h1 className="text-3xl font-extrabold text-center mb-8">
           Space Weight Calculator
-        </h1>
-
+        </h1> 
         {/* Input */}
         <input
           type="number"

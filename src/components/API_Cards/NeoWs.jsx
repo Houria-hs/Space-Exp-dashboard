@@ -7,11 +7,10 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 export const NeoWs = () => {
   const [Chartdata,setChartData] = useState([]);
-  const ApiKey ="xs9jqCh4PkMKo8geVNFUzjhgHLA5bX9rjfwH28g9"
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2025-08-01&end_date=2025-08-08&api_key=${ApiKey}`)
+      .get("http://localhost:5000/api/neos")
       .then((res) => {
         const nearEarthObjects = res.data.near_earth_objects;// Transform object into array
          // Flatten data into array of {date, velocity, name}
@@ -34,9 +33,9 @@ export const NeoWs = () => {
 
 
   return (
-        <div className=" p-6 bg-gray-900 rounded-xl shadow-lg max-w-110 mx-auto">
+        <div className=" p-6 bg-gray-900 rounded-xl shadow-lg ">
       <h2 className="text-white p-4 text-2xl mb-4 font-semibold">Near Earth Asteroid Velocities</h2>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={350}>
         <LineChart data={Chartdata}>
           <CartesianGrid strokeDasharray="3 3" stroke="#444" />
           <XAxis dataKey="date" stroke="#aaa" />
