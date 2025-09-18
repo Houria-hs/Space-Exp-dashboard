@@ -24,7 +24,8 @@ export const ApodTest = () => {
 
   if (!data) return <p className="text-white">Loading...</p>;
   return (
-    <div className=" bg-[#111827] rounded-xl shadow-lg overflow-hidden max-w-md mx-auto border border-gray-700">
+    <div className="bg-[#111827] rounded-xl shadow-lg overflow-hidden 
+                w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mb-6">
       <h1 className="text-white text-2xl font-semibold mb-3 p-4">Astronomy Picture Of The Day</h1>
       <img
         src={data.url}
@@ -40,7 +41,6 @@ export const ApodTest = () => {
             ? data.explanation
             : `${data.explanation.slice(0, limit)}...`
             : "Loading description..."}
-
           {data.explanation && data.explanation.length > limit && (
           <span
             onClick={toggleText}

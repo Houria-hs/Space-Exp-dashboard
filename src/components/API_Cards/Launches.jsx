@@ -34,8 +34,10 @@ export const SpaceXLaunches = () => {
   if (!data.length) return <p className="text-white">Loading SpaceX data...</p>;
 
   return (
-    <div className="p-6 bg-gray-900 rounded-xl shadow-lg">
+    <div className="bg-[#111827] rounded-xl shadow-lg overflow-hidden 
+                w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mb-6">
       <h2 className="text-white text-2xl mb-4 p-4 font-semibold">SpaceX Launches per Year</h2>
+    <div className="p-4 sm:p-6 bg-gray-900 rounded-xl  w-full mb-6">
       <ResponsiveContainer width="100%" height={350}>
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#444" />
@@ -45,6 +47,7 @@ export const SpaceXLaunches = () => {
           <Bar dataKey="launches" fill="#ff4d6d" />
         </BarChart>
       </ResponsiveContainer>
+      </div>
     </div>
   );
 };

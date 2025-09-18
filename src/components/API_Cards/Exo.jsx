@@ -29,10 +29,12 @@ const ExoplanetsChart = () => {
   }, []);
 
   return (
-    <div className="p-6 bg-gray-900 rounded-xl shadow-lg max-w-110 mx-auto">
+    <div className="bg-[#111827] rounded-xl shadow-lg overflow-hidden 
+                w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mb-6">
       <h2 className="text-white p-4 text-2xl mb-4 font-semibold">
         Potential Earth-like Candidates
       </h2>
+      <div className="p-4 sm:p-6 rounded-xl  w-full mb-6">
       <ResponsiveContainer width="100%" height={350}>
         <ScatterChart>
           <CartesianGrid stroke="#333" />
@@ -52,6 +54,7 @@ const ExoplanetsChart = () => {
           <Scatter name="Candidates" data={data} fill="#82ca9d" />
         </ScatterChart>
       </ResponsiveContainer>
+      </div>
     </div>
   );
 };
