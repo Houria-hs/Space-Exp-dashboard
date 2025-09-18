@@ -13,7 +13,7 @@ return (
         </div>
         <div className="space-y-6">
             <NeoWs />
-            <SpaceXLaunches/>
+            <SpaceXLaunches/>  
         </div>
     </div>
     <Quote/>
