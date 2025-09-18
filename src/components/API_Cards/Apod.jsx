@@ -10,9 +10,11 @@ export const ApodTest = () => {
 
   const toggleText = () => setExpanded(!expanded);
 
+
   useEffect(() => {
+    const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
     axios
-      .get("http://localhost:5000/api/apod")
+      .get(`${API}/api/apod`)
       .then((res) => {
         setData(res.data);
       })
