@@ -10,9 +10,8 @@ const SpaceWeather = () => {
   const [error, setError] = useState("");
   
   useEffect(() => {
-      const API = import.meta.env.VITE_API_URL || "http://localhost:5000";    
       axios
-      .get(`${API}/api/space-weather`)
+      .get("https://space-exp-dashboard-backend.onrender.com/api/space-weather")
       .then((res) => {
         
         if (!Array.isArray(res.data)) {

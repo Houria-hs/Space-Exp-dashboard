@@ -8,9 +8,8 @@ const ExoplanetsChart = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const API = import.meta.env.VITE_API_URL  || "http://localhost:5000";
     axios
-      .get(`${API}/exo-candidates`)
+      .get("https://space-exp-dashboard-backend.onrender.com/exo-candidates")
       .then((res) => {
          console.log("Raw data:", res.data); // <--- check what you get back
 

@@ -9,9 +9,8 @@ export const NeoWs = () => {
   const [Chartdata,setChartData] = useState([]);
 
   useEffect(() => {
-    const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
     axios
-      .get(`${API}/api/neos`)
+      .get("https://space-exp-dashboard-backend.onrender.com/api/neos")
       .then((res) => {
         const nearEarthObjects = res.data.near_earth_objects;// Transform object into array
          // Flatten data into array of {date, velocity, name}

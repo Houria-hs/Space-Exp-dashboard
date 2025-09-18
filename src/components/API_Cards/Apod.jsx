@@ -12,9 +12,8 @@ export const ApodTest = () => {
 
 
   useEffect(() => {
-    const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
     axios
-      .get(`${API}/api/apod`)
+      .get("https://space-exp-dashboard-backend.onrender.com/api/apod")
       .then((res) => {
         setData(res.data);
       })
