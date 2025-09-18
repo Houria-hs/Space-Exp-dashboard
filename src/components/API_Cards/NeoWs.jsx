@@ -33,7 +33,7 @@ export const NeoWs = () => {
 
 
   return (
-        <div className="bg-[#111827] rounded-xl shadow-lg overflow-hidden 
+    <div className="bg-[#111827] rounded-xl shadow-lg overflow-hidden 
                 w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mb-6 ">
       <h2 className="text-white p-4 text-2xl mb-4 font-semibold">Near Earth Asteroid Velocities</h2>
       <div className='p-4 sm:p-6 bg-gray-900 rounded-xl  w-full mb-6'>
