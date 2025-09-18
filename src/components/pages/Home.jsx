@@ -6,7 +6,7 @@ import ExoplanetsChart from "../API_Cards/Exo"
 const HomePage = () => {
 return (
     <>
-    <div className="max-w-7xl p-4 rounded-2xl bg-gray-800 mx-auto px-4 grid md:grid-cols-2 gap-5 mt-16">
+    <div className="w-full max-w-7xl mx-auto mt-16 p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-6">
             <ApodTest/>
             <ExoplanetsChart/>
