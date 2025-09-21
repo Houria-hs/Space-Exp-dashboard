@@ -20,6 +20,11 @@ The app provides visualizations, news, and interactive tools to make space explo
 
 ---
 
+## Repositories
+
+- **Frontend (this repo):** React + Tailwind CSS + Recharts  
+- **Backend:** [NASA Explorer Backend](https://github.com/Houria-hs/nasa-exp-dashboard--backend) (Node.js/Express for API key handling & security)
+
 ## 📂 Installation & Setup
 
 Clone the repo:
