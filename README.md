@@ -3,6 +3,8 @@
 An interactive web dashboard for space enthusiasts that integrates multiple NASA APIs through a secure Node.js backend.  
 The app provides visualizations, news, and interactive tools to make space exploration fun and educational.  
 
+live demo : https://68cc513cf497d2270e72ae16--space-explorer-dashboard.netlify.app
+
 ---
 
 ## 🚀 Features
@@ -16,7 +18,8 @@ The app provides visualizations, news, and interactive tools to make space explo
 ## 🛠️ Tech Stack
 - **Frontend:** React, Tailwind CSS, Recharts  
 - **Backend:** Node.js (handles NASA API requests + API key security)  
-- **APIs:** NASA Open APIs  
+- **APIs:** NASA Open APIs
+- **Deployement:** Netlify
 
 ---
 
